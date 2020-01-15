@@ -1,0 +1,19 @@
+.main{
+    display:flex;
+    flex-direction: row;
+}
+
+.card{
+    margin: 0 3.8% 3.8% 0;
+    width: 346px;
+}
+
+.productName{
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+}
+
+.price{
+    font-size: 11px;
+    color: rgb(128, 128, 128);
+}

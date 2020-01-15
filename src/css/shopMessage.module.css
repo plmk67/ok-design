@@ -1,0 +1,17 @@
+.message {
+  background-color: rgb(190, 190, 190);
+  display: flex;
+  height: 35px;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.message p{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+}

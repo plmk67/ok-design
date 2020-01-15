@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre&display=swap');
+
+.main{
+    display: flex;
+    flex-direction: column;
+   
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px 20px;
+    font-family: 'Proza Libre', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+ 
+}
+
+.userAccount{
+   
+}
+

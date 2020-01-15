@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  width:100%;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.logo img{
+    height:20px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.userAccount {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
