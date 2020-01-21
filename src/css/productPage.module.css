@@ -1,0 +1,36 @@
+.main {
+  padding: 0px 38px 0 38px;
+  height: auto;
+}
+
+.product_title {
+  font-size: 21px;
+}
+
+.price {
+  font-size: 13px;
+}
+
+.productDescription {
+  font-size: 14px;
+  margin: 14px 0 40px 0px;
+}
+.image {
+  margin-bottom: 40px;
+}
+
+.product {
+  position: sticky;
+  top: 0;
+}
+
+.product_info {
+  padding: 50px 40px 0 0;
+  position: sticky;
+}
+
+.product_gallery {
+  position: relative;
+  justify-content: right;
+  flex-direction: column;
+}

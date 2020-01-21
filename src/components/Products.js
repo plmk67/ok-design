@@ -1,51 +1,61 @@
 import React from "react"
-import { Col, Card, CardImg, CardBody } from "reactstrap"
+import { Col, Card, CardBody } from "reactstrap"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import styles from "../css/products.module.css"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Products = () => {
-  const response = useStaticQuery(getData)
-  const data = response.featuredData.edges
+  const response = useStaticQuery(getProducts)
+  const data = response.allContentfulProduct.edges
 
   console.log(data)
 
+  console.log(data)
   return (
     <div className={styles.main}>
-      {data.map(({ node }) => {
-        return (
-          <Col key={node.id} md="4">
-            <Card className={styles.card}>
-            <Image top fluid={node.images[0].fluid} />
-              <CardBody>
-                <div className={styles.productName}>{node.name}</div>
-                <div className={styles.price}>${node.price.toFixed(2)}</div>
-              </CardBody>
-            </Card>
-          </Col>
-        )
-      })}
+     
+        {/* <Image top fluid={data[1].node.images[0].fluid} /> */}
+
+        {data.map(({ node }) => {
+          return (
+            <Col key={node.id} md="4">
+              <Card className={styles.card}>
+                <AniLink to={`product/${node.slug}`}>
+                  <Img top fluid={node.images[0].fluid} />
+                </AniLink>
+
+                <CardBody>
+                  <div className={styles.productName}>{node.productName}</div>
+                  <div className={styles.price}>${node.price.toFixed(2)}</div>
+                </CardBody>
+              </Card>
+            </Col>
+          )
+        })}
+
     </div>
   )
 }
 
-const getData = graphql`
+const getProducts = graphql`
   query {
-    featuredData: allContentfulTours(filter: { featured: { eq: true } }) {
+    allContentfulProduct {
       edges {
         node {
-          id
-          parent {
-            id
-          }
-          name
+          contentful_id
+          productName
           slug
+          price
+          description {
+            description
+          }
+          publish
           images {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
-          price
         }
       }
     }
