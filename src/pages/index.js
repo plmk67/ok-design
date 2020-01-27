@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 import ShopMessage from "../components/ShopMessage"
 import ShopIntro from "../components/ShopIntro"
 import Main from "../components/Main"
+import Footer from '../components/Footer'
 
 import "bootstrap/dist/css/bootstrap.css"
 
@@ -16,9 +17,9 @@ const index = () => {
         <Navbar />
         <ShopMessage data={"Free shipping on all orders over $100"} />
         <div>
-          
           <Main />
         </div>
+        <Footer/>
       </Layout>
     </div>
   )

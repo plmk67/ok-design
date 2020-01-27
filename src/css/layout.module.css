@@ -3,7 +3,7 @@
 .main{
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 20px;
     font-family: 'Proza Libre', sans-serif;;

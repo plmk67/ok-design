@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
 import ShopMessage from "../components/ShopMessage"
-
+import Footer from '../components/Footer'
 import styles from "../css/productPage.module.css"
 
 import { Col, Row } from "reactstrap"
@@ -45,7 +45,10 @@ const productPage = ({ data }) => {
             })}
           </div>
         </Col>
+
+        
       </Row>
+      <Footer/>
     </Layout>
   )
 }
