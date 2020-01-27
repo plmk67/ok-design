@@ -1,76 +1,88 @@
-.main{
-    display: flex;
-    height: 20%;
-    padding: 0 38px 0 38px ;
-    
+.main {
+  display: flex;
+  height: 20%;
+  padding: 0 38px 0 38px;
 }
 
-.main a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
+.main a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-.latestProduct{
-    width: 65%;
-    background-color:rgb(225, 225, 225);
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
-    margin-bottom: 50px;
+.latestProduct {
+  width: 65%;
+  background-color: rgb(225, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  margin-bottom: 50px;
 }
 
-.latestProduct img{
-    height: 326px;
-    transition: all 300ms ease-in-out;
-    box-shadow: 4px 4px 10px 0 #bdbdbd;
+.latestProduct img {
+  height: 326px;
+  transition: all 300ms ease-in-out;
+  box-shadow: 4px 4px 10px 0 #bdbdbd;
 }
-
 
 .productMeta {
-    width: 50%;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
-.introMessage{
-    display: flex;
-    justify-content: center;
+.introMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35%;
+  text-align: center;
 }
 
-.title{
-    margin: 32px 0px 10px 0;
+.introMessage h1 {
+    margin: 80px 0 15px 0;
+    font-size: 30px;
 }
 
-.subtitle{
-    font-size: 10px;
-    margin-bottom: 10px;
+.introMessage p {
+    margin: 45px 40px 15px 40px;
 }
 
-.price{
-    font-size:11px
+
+.title {
+  margin: 32px 0px 10px 0;
 }
 
-.description{
-    font-size: 12px;
-    margin: 30px 0 30px 0;
+.subtitle {
+  font-size: 10px;
+  margin-bottom: 10px;
 }
 
-.link a{
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    
+.price {
+  font-size: 11px;
+}
+
+.description {
+  font-size: 12px;
+  margin: 30px 0 30px 0;
+}
+
+.link a {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 a {
-    color: #0060B6;
-    text-decoration: none;
+  color: #0060b6;
+  text-decoration: none;
 }
 
-a:hover 
-{
-     color:#00A0C6; 
-     text-decoration:none; 
-     cursor:pointer;  
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
 }

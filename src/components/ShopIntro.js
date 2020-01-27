@@ -15,7 +15,7 @@ const ShopIntro = () => {
           </figure>
         </Col>
         <Col className={styles.productMeta}>
-          <span className={styles.title}>Oscar Kwong  Designer</span>
+          <span className={styles.title}>Oscar Kwong Designer</span>
           <span className={styles.description}>
             Lorem ipsum dolor amet tbh gastropub normcore you probably haven't
             heard of them shabby chic art party XOXO mustache tousled four
@@ -34,7 +34,12 @@ const ShopIntro = () => {
         </Col>
       </Col>
       <Col md="5.5" className={styles.introMessage}>
-        
+        <h1>Store</h1>
+        <p>
+          Lorem ipsum dolor sit Hamlet, rump beef ribs pancetta, ribeye
+          tenderloin turkey jowl venison t-bone pork prosciutto doner. Cow beef
+          ribs boudin, corned beef shoulder short ribs chicken. Chicken pork
+        </p>
       </Col>
     </Row>
   )
