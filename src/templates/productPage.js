@@ -28,22 +28,22 @@ const productPage = ({ data }) => {
       <ShopMessage data={"Free shipping on all orders over $100"} />
       <Row className={styles.main}>
         <Col className={styles.product} md="4">
-          <div className={styles.product_info}>
+          <Col className={styles.product_info}>
             <h1 className={styles.product_title}>{productName}</h1>
             <p className={styles.price}>${price.toFixed(2)}</p>
             <p className={styles.productDescription}>
               {description.description}
             </p>
-          </div>
+          </Col>
         </Col>
         <Col className={styles.product_gallery} md="8">
-          <div>
+          <Col>
             {images.map((image, index) => {
               return (
                 <Img className={styles.image} key={index} fluid={image.fluid} />
               )
             })}
-          </div>
+          </Col>
         </Col>
 
         

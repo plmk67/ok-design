@@ -5,7 +5,8 @@
   height: 70px;
   background-color: white;
   position: sticky;
-  top:0;
+  top: 0;
+
 }
 
 .logo {
@@ -14,10 +15,24 @@
   align-content: center;
 }
 
-.logo img{
-    height:20px;
-    width: auto;
-    margin-left: 20px;
+.logo img {
+  height: 20px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.logo a {
+  font-family:  'Noto Sans', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none !important;
+  color: black;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .userAccount {

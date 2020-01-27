@@ -7,16 +7,13 @@ const Footer = () => {
     <div className={styles.main}>
       <Container className={styles.footer}>
         <Row>
-          <div className={styles.aboutText}>
+          <Col className={styles.aboutText}>
             <p>
-              Cereal is a biannual, travel & style magazine based in the United
-              Kingdom. Each issue focusses on a select number of destinations,
-              alongside engaging interviews and stories on unique design, art,
-              and fashion.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-          </div>
+          </Col>
 
-          <div className={styles.footerMenu}>
+          <Col className={styles.footerMenu}>
             <Col>
               <p>Info</p>
               <li>Stockists</li>
@@ -34,9 +31,9 @@ const Footer = () => {
               <li>Shipping</li>
               <li>FAQs</li>
             </Col>
-          </div>
+          </Col>
 
-          <div className={styles.footerSocial}>
+          <Col className={styles.footerSocial}>
             <Row>
               <Col>
                 <p>Newsletter</p>
@@ -48,7 +45,7 @@ const Footer = () => {
                 />
               </Col>
             </Row>
-          </div>
+          </Col>
         </Row>
       </Container>
     </div>

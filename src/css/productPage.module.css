@@ -1,7 +1,10 @@
 .main {
   padding: 0px 38px 0 38px;
   height: auto;
+  display: flex;
+  align-items: flex-start;
 }
+
 
 .product_title {
   font-size: 21px;
@@ -23,6 +26,8 @@
 
 .product {
   height: 500px;
+  position: sticky;
+  top:0px;
 }
 
 .product_info {

@@ -1,6 +1,12 @@
 .main{
-    display:flex;
+    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cardLayout {
+    display: flex;
+    justify-content: center;
 }
 
 .card{

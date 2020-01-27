@@ -1,5 +1,5 @@
 import React from "react"
-import { Col, Card, CardBody } from "reactstrap"
+import { Container, Row, Col, Card, CardBody } from "reactstrap"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "../css/products.module.css"
@@ -13,13 +13,11 @@ const Products = () => {
 
   console.log(data)
   return (
-    <div className={styles.main}>
-     
-        {/* <Image top fluid={data[1].node.images[0].fluid} /> */}
-
+    <Row className={styles.main}>
+   
         {data.map(({ node }) => {
           return (
-            <Col key={node.id} md="4">
+            <Col className={styles.cardLayout} key={node.id} md="4">
               <Card className={styles.card}>
                 <AniLink to={`product/${node.slug}`}>
                   <Img top fluid={node.images[0].fluid} />
@@ -33,8 +31,7 @@ const Products = () => {
             </Col>
           )
         })}
-
-    </div>
+    </Row>
   )
 }
 
