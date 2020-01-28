@@ -9,16 +9,13 @@ const Products = () => {
   const response = useStaticQuery(getProducts)
   const data = response.allContentfulProduct.edges
 
-  console.log(data)
-
-  console.log(data)
   return (
     <Row className={styles.main}>
    
         {data.map(({ node }) => {
           return (
             <Col className={styles.cardLayout} key={node.id} md="4">
-              <Card className={styles.card}>
+              <Card sm="4" md="3" className={styles.card}>
                 <AniLink to={`product/${node.slug}`}>
                   <Img top fluid={node.images[0].fluid} />
                 </AniLink>
